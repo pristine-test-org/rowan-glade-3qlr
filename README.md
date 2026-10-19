@@ -8,11 +8,9 @@ matrix: impeccable-reviews#302.
 
 ## Deployment links
 
-Filled in at prep time.
-
 | Production | Preview gate |
 |---|---|
-| _not deployed_ | no (the site's own sign-in) |
+| https://rowan-glade-3qlr.vercel.app | no (the site's own sign-in) |
 
 ## Routes
 
