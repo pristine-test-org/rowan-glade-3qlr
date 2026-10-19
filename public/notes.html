@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glade notes · Rowan Glade</title>
+    <link rel="stylesheet" href="/notes.css" />
+    <script>
+      // Signed-in page: Supabase keeps the session in local storage, so a visitor without
+      // one goes to the customer login, like the landing page does.
+      var signedIn = Object.keys(localStorage).some(function (key) {
+        return /^sb-.*-auth-token$/.test(key) && localStorage.getItem(key);
+      });
+      if (!signedIn) location.replace("/login");
+    </script>
+  </head>
+  <body style="--accent: #2f7d4f">
+    <header>
+      <span class="mark">Rowan Glade</span>
+      <a class="back" href="/">Back to the list</a>
+    </header>
+    <main class="notes">
+      <h1 class="notes-title">Glade notes</h1>
+      <p class="notes-intro">Short notes on how the shared list is kept, written for the people who use it every day.</p>
+      <ul class="notes-steps">
+        <li><span class="bar"></span>Add an item the moment you think of it.</li>
+        <li><span class="bar"></span>Tick it off when it is done.</li>
+        <li><span class="bar"></span>Everyone signed in sees the same five latest items.</li>
+      </ul>
+      <p class="notes-edge">The list shows the five newest items, so older ones drop off the page without being deleted.</p>
+      <a class="notes-more" href="/">Read the list</a>
+    </main>
+    <footer>Rowan Glade · a small product, explained in one page</footer>
+  </body>
+</html>
