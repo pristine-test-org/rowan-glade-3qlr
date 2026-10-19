@@ -1,0 +1,8 @@
+{
+  "note": "One test account per role, in the shared Supabase project's Auth. The role is in each user's app_metadata. Passwords are never in this repo.",
+  "users": [
+    { "email": "admin@rowan-glade-3qlr.test", "role": "admin", "loginPage": "/admin" },
+    { "email": "manager@rowan-glade-3qlr.test", "role": "manager", "loginPage": "/manager" },
+    { "email": "customer@rowan-glade-3qlr.test", "role": "customer", "loginPage": "/login" }
+  ]
+}

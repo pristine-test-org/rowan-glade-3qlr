@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in · Rowan Glade</title>
+  </head>
+  <body style="--accent: #2f7d4f" data-role="customer" hidden>
+    <header><span class="mark">Rowan Glade</span></header>
+    <main class="signin">
+      <h1>Sign in</h1>
+      <p>Sign in to your Rowan Glade account.</p>
+      <form id="signin">
+        <label>Email <input name="email" type="email" autocomplete="username" required /></label>
+        <label>Password <input name="password" type="password" autocomplete="current-password" required /></label>
+        <p id="error" class="error" role="alert" hidden></p>
+        <button type="submit">Sign in</button>
+      </form>
+    </main>
+    <footer>Rowan Glade · a test site for Impeccable reviews</footer>
+    <script type="module" src="/src/login.ts"></script>
+  </body>
+</html>

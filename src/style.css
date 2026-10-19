@@ -1,0 +1,39 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #1c1c1c;
+  background: #fafaf7;
+}
+body { margin: 0; }
+header, main, footer { max-width: 44rem; margin: 0 auto; padding: 1.25rem 1rem; }
+header { display: flex; justify-content: space-between; align-items: center; }
+header a { color: var(--accent); }
+.mark { font-weight: 700; color: var(--accent); }
+.hero { padding: 4rem 0 3rem; }
+.hero h1 { font-size: clamp(2rem, 6vw, 3.25rem); margin: 0 0 1rem; }
+.hero p { font-size: 1.15rem; line-height: 1.5; max-width: 34rem; }
+.cta {
+  display: inline-block; margin-top: 1rem; padding: 0.7rem 1.2rem; border-radius: 0.5rem;
+  background: var(--accent); color: #fff; text-decoration: none; font-weight: 600;
+}
+#live ul { padding-left: 1.2rem; line-height: 1.8; }
+.muted { color: #777; list-style: none; margin-left: -1.2rem; }
+footer { color: #777; font-size: 0.9rem; border-top: 1px solid #e5e5e0; }
+.account { display: flex; gap: 0.75rem; align-items: center; color: #555; font-size: 0.9rem; }
+.account button, .signin button {
+  font: inherit; border: 1px solid var(--accent); border-radius: 0.5rem; cursor: pointer;
+}
+.account button { padding: 0.3rem 0.7rem; background: none; color: var(--accent); }
+.badge {
+  font-size: 0.8rem; font-weight: 600; padding: 0.2rem 0.6rem; border-radius: 999px;
+  background: var(--accent); color: #fff;
+}
+.signin { max-width: 24rem; padding-top: 4rem; padding-bottom: 4rem; }
+.signin h1 { font-size: 2rem; margin: 0 0 0.5rem; }
+.signin form { display: grid; gap: 1rem; margin-top: 2rem; }
+.signin label { display: grid; gap: 0.35rem; font-weight: 600; font-size: 0.95rem; }
+.signin input {
+  font: inherit; font-weight: 400; padding: 0.6rem 0.75rem; border: 1px solid #ccc; border-radius: 0.5rem;
+  background: #fff;
+}
+.signin button { padding: 0.7rem 1.2rem; background: var(--accent); color: #fff; font-weight: 600; }
+.error { margin: 0; color: #b42318; }
